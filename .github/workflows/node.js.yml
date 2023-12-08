@@ -23,8 +23,8 @@ jobs:
         cache: 'pnpm'
 
     - run: pnpm install
-    - run: pnpm turbo build lint
-    - run: pnpm turbo build
+    - run: pnpm turbo build lint -vv
+    - run: pnpm turbo build -vv
       if: ${{ failure() }}
     - run: ls -alt apps/docs/
       if: ${{ failure() }}
