@@ -13,6 +13,16 @@ main().catch((err) => {
 });
 
 process.on('SIGINT', function() {
-  console.log('Do something useful here.');
+  console.log('exiting... (SIGINT)');
+  process.exit(1)
+});
+
+process.on('SIGTERM', function() {
+  console.log('exiting... (SIGTERM)');
+  process.exit(1)
+});
+
+process.on('SIGHUP', function() {
+  console.log('exiting... (SIGHUP)');
   process.exit(1)
 });
