@@ -1,4 +1,4 @@
-# Turbo caches the results before completion
+# Turbo caches incomplete results.
 
 
 * `docs/build.js` creates a file in docs/dist after a delay
@@ -12,9 +12,11 @@ Steps to reproduce:
 
 Expected result:
 
-`docs/dist` is created
+`apps/docs/dist` is created with content.
 
 Actual result:
+
+`apps/docs/dist` does not exist
 
 ```
 docs:build: cache hit, replaying logs d7849613a3a4e98d
