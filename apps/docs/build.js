@@ -11,3 +11,8 @@ main().catch((err) => {
   console.error(err);
   process.exit(1);
 });
+
+process.on('SIGINT', function() {
+  console.log('Do something useful here.');
+  process.exit(1)
+});
