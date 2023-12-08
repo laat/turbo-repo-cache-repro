@@ -7,7 +7,7 @@
 Steps to reproduce:
 
 1. `pnpm install`
-2. `pnpm turbo build lint`
+2. `pnpm turbo build lint` (lint fails before build completes)
 3. `pnpm turbo build`
 
 Expected result:
